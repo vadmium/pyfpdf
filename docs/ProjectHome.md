@@ -15,7 +15,7 @@ _PyFPDF_ is a library for PDF document generation under Python, ported from PHP 
 
 This repository is a fork of the library's [original port by Max Pat](http://www.fpdf.org/dl.php?id=94), with the following enhancements:
 
-  * Python 2.5 to 3.4+ support (see [Python3](Python3.md) support)
+  * Python 2.5+ and 3.2+ support (see [Python3](Python3.md) support)
   * [Unicode](Unicode.md) (UTF-8) TrueType font subset embedding (Central European, Cyrillic, Greek, Baltic, Thai, Chinese, Japanese, Korean, Hindi and almost any other language in the world) **New!** based on [sFPDF](http://www.fpdf.org/en/script/script91.php) LGPL3 PHP version from [Ian Back](mailto:ian@bpm1.com?subject=sFPDF)
   * Improved installers (setup.py, py2exe, PyPI) support
   * Barcode I2of5 and code39, QR code coming soon ...
