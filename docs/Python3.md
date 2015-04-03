@@ -8,10 +8,10 @@ In general, Python 2.x code does not run unmodified under Python 3.x, mostly bec
 
 # Chosen Path #
 
-There will not be a manual py3k repository; all py3k changes will be back-ported to the trunk ~~in order to enable 2to3 conversion automatically~~ (unified codebase, compatible with both Python 2 and Python 3, without needing the 2to3 converter in the latest revisions).
+There will not be a manual py3k repository; all py3k changes will be ported to the main code. This is a unified codebase, compatible with both Python 2 and Python 3, without needing the 2to3 converter.
 
 As this library is pure Python and has no dependencies (beside PIL optionally), there is no need to do a huge re-factor.
-BTW, initial py3k support took a few changes, see changeset c2f3bae9b379 (just 8 changes). More changes are coming to fix Unicode TTF and image support.
+BTW, initial py3k support took a few changes, see Mercurial changeset c2f3bae9b379 ("added first changes for py3k compatibility", just 8 changes). More changes are coming to fix Unicode TTF and image support.
 
 Most string and buffering methods are encapsulated in well-known places (like the `_out` and `sprintf` functions), so they should not cause a big impact.
 
@@ -21,7 +21,7 @@ Also, the library is Unicode aware since version 1.7, so also that impact could 
 
 # Conversion Script #
 
-**IMPORTANT NOTE**: since version 1.7.2 (revision ca2968763421) the codebase has been unified, so there is no need to run any conversion script. (Please skip this section.)
+**IMPORTANT NOTE**: since version 1.7.2 (Mercurial revision ca2968763421, "added Python 3 module with imports, strings, and other utility functions") the codebase has been unified, so there is no need to run any conversion script. (Please skip this section.)
 
 In Windows, you can use `py3k.bat`, which just calls `2to3.py`, install the package and run the basic test:
 
