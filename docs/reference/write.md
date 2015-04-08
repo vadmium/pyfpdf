@@ -1,7 +1,7 @@
 ## write ##
 
 ```python
-write(h: float, txt: str, link)
+write(h: float, txt: str = '', link = '')
 ```
 
 ### Description ###

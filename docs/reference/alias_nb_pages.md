@@ -1,7 +1,7 @@
 ## alias_nb_pages ##
 
 ```python
-fpdf.alias_nb_pages()
+fpdf.alias_nb_pages(alias = '{nb}')
 ```
 
 ### Description ###
