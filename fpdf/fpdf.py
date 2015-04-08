@@ -704,7 +704,7 @@ class FPDF(object):
         return self.auto_page_break
 
     @check_page
-    def cell(self, w,h=0,txt='',border=0,ln=0,align='',fill=0,link=''):
+    def cell(self, w,h=0,txt='',border=0,ln=0,align='',fill=False,link=''):
         "Output a cell"
         txt = self.normalize_text(txt)
         k=self.k
@@ -723,8 +723,8 @@ class FPDF(object):
         if(w==0):
             w=self.w-self.r_margin-self.x
         s=''
-        if(fill==1 or border==1):
-            if(fill==1):
+        if(fill or border==1):
+            if(fill):
                 if border==1:
                     op='B'
                 else:
@@ -797,7 +797,7 @@ class FPDF(object):
             self.x+=w
 
     @check_page
-    def multi_cell(self, w, h, txt='', border=0, align='J', fill=0, split_only=False):
+    def multi_cell(self, w, h, txt='', border=0, align='J', fill=False, split_only=False):
         "Output text with automatic or explicit line breaks"
         txt = self.normalize_text(txt)
         ret = [] # if split_only = True, returns splited text cells
