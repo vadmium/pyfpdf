@@ -1,7 +1,7 @@
 ## get_string_width ##
 
 ```python
-self.get_string_width(s: str)
+fpdf.get_string_width(s: str)
 ```
 
 ### Description ###
