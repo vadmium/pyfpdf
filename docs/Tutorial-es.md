@@ -23,7 +23,7 @@ pdf.output('tuto1.pdf', 'F')
 Luego de incluir la biblioteca, creamos un objeto FPDF. El constructor [FPDF](reference/FPDF.md) es usado aqui con los valores predeterminados: páginas en A4 portrait -vertical- y la unidad de medida en milimetros. Podría haberlos especificado explicitamente: 
 
 ```python
-pdf=FPDF('P', 'mm', 'A4')
+pdf = FPDF('P', 'mm', 'A4')
 ```
 
 Es posible usar landscape -apaisado- (L), otros formatos de página (como Letter -carta- y Legal -oficio-) y únidad de medida (pt, cm, in). 
